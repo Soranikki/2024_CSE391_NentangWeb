@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .form-group {
+            flex: 1 1 50%;
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-top: 5px;
+        }
+        .form-group textarea {
+            height: 100px;
+        }
+        .basic-info {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        .basic-info h2 {
+            margin-bottom: 20px;
+        }
+        .basic-info::after {
+            content: "";
+            display: block;
+            width: 100%;
+            border-bottom: 1px solid #ccc;
+        }
+        .contact-info {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        .contact-info h2 {
+            margin-bottom: 20px;
+        }
+        .contact-info::after {
+            content: "";
+            display: block;
+            width: 435%;
+            border-bottom: 1px solid #ccc;
+        }
+        .radio-options label {
+            display: inline-block;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="basic-info">
+            <h2>Basic Info</h2>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="Employee ID">Employee ID:</label>
+                <input type="text" id="Employee ID" name="Employee ID" required>
+            </div>
+            <div class="form-group">
+                <label for="last name">Last Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="first name">First Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+        <div class="contact-info">
+            <h2>Contact Info</h2>
+        </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input id="address" name="address" required></input>
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
