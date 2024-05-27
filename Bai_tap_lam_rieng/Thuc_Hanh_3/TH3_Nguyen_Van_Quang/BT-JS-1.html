@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiển thị Tên và Tuổi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #info {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hiển thị Tên và Tuổi</h1>
+        <button onclick="hienThiTenVaTuoi()">Nhập thông tin</button>
+        <div id="info"></div>
+    </div>
+
+    <script>
+        function hienThiTenVaTuoi() {
+            var ten = prompt("Nhập vào tên của bạn:");
+            var tuoi = prompt("Nhập vào tuổi của bạn:");
+
+            var infoDiv = document.getElementById("info");
+            infoDiv.innerHTML = "<strong>" + ten + "</strong> " +  "<u>" + tuoi + "</u>" + " Tuổi"; 
+        }
+    </script>
+</body>
+</html>
